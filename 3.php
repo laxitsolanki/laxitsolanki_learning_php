@@ -1,18 +1,12 @@
-<?--diffrence between server side and client side language-->
-<scrit>
-
-		//unsecurity
-		for(i=1;i<=5;i++;)
-		{
-			document.write(i);
-		}
-</script>
-<ht>
+<meta http-equiv="refresh" content="40">
 <?php
 	
-		//security
-		for($i=1;$i<=5;$i++)
-		{
-			echo $i;
+	if(isset($_COOKIE['c_name']))
+	{
+		echo "video is shown";
+	}
+	else
+	{
+		echo "Please Apply Premium 200/-";
 	}
 ?>

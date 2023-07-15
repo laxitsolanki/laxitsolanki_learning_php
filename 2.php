@@ -1,20 +1,9 @@
-<style>
-.abc{color:yellow; background:maroon;}
-</style>
 <?php
-//plain php
-echo "welcome tp php";
-print "welcome";
+$n = $_POST['nm'];
+setcookie("c_name","$n",time()+30);
 
-//using html
-echo "<br><font color=red>welcome</font>";
-print "<br><font color=blue>welcome</font>";
+echo $_COOKIE['c_name'];
 
-//using css
-echo "<p style='color:red; background:black; '>hello11</p>";
-print "<p class=abc>welcome123</p>";
+?>
 
-//usung java script
-echo "<button onclick=alert('hi')>click</button>";
-?>                                                                                                                                 
-   
+<a href="3.php">View Video</a>
